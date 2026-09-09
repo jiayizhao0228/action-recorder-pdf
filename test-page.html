@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Action Recorder Test Page</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; }
+    header { padding: 48px; background: linear-gradient(135deg, #d7eef1, #f4dfcf); }
+    main { padding: 32px 48px 900px; max-width: 920px; }
+    label { display: grid; gap: 8px; margin: 18px 0; font-weight: 700; }
+    input, textarea { width: 360px; max-width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit; }
+    button { height: 38px; border: 0; border-radius: 6px; padding: 0 14px; background: #2563eb; color: #fff; font: inherit; margin: 8px 8px 8px 0; }
+    .card { border: 1px solid #d8dee9; border-radius: 8px; padding: 18px; margin: 22px 0; background: #fff; box-shadow: 0 8px 24px rgba(21,31,48,.08); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Action Recorder Test Page</h1>
+    <p>Use this page to test clicks, normal inputs, sensitive inputs, Tab completion, and current-screen screenshots.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Buttons</h2>
+      <button>开始学习</button>
+      <button>提交</button>
+      <button>取消</button>
+    </section>
+    <section class="card">
+      <h2>Inputs</h2>
+      <label>姓名 <input id="name" name="name" placeholder="请输入姓名"></label>
+      <label>手机号 <input id="phone" name="phone" placeholder="请输入手机号"></label>
+      <label>密码 <input id="password" name="password" type="password" placeholder="请输入密码"></label>
+      <label>验证码 <input id="code" name="verification_code" placeholder="短信验证码"></label>
+      <label>备注 <textarea placeholder="普通备注"></textarea></label>
+    </section>
+    <section class="card">
+      <h2>Scroll Area</h2>
+      <p>There is intentionally a lot of vertical space below this section so you can test recording after scrolling.</p>
+    </section>
+  </main>
+</body>
+</html>
