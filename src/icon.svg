@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Action Recorder">
+  <rect width="128" height="128" rx="24" fill="#2563eb"/>
+  <rect x="24" y="28" width="80" height="58" rx="8" fill="#ffffff"/>
+  <circle cx="73" cy="55" r="13" fill="none" stroke="#ef4444" stroke-width="8"/>
+  <path d="M32 98h64" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+</svg>
