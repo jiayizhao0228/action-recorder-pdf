@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Action Recorder PDF",
+  "version": "0.1.0",
+  "description": "Record web page actions with annotated screenshots and export a PDF.",
+  "action": {
+    "default_title": "Open Action Recorder"
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "options_page": "src/recovery.html",
+  "permissions": ["activeTab", "scripting", "tabs", "storage", "unlimitedStorage"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/content.css", "src/shared.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
