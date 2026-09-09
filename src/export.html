@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Action Recorder Export</title>
+  <link rel="stylesheet" href="export.css">
+</head>
+<body>
+  <header class="toolbar">
+    <button id="printButton">打印 / 保存为 PDF</button>
+    <button id="wordButton">下载 Word</button>
+    <span id="status">Loading...</span>
+  </header>
+  <section class="save-help">
+    <strong>PDF 保存方式：</strong>
+    点击“打印 / 保存为 PDF”，在打印窗口里把“目标打印机”选择为“另存为 PDF / Save as PDF”，然后点击“保存”。
+  </section>
+  <main id="document"></main>
+  <script type="module" src="export.js"></script>
+</body>
+</html>
